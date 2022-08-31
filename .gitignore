@@ -53,3 +53,5 @@ build/builtin-actors/v*
 build/builtin-actors/*.car
 
 dist/
+localnet.json
+devgen.car
