@@ -12,8 +12,10 @@ export CGO_CFLAGS="-D__BLST_PORTABLE__"
 
 rm devgen.car
 rm -rf ~/.genesis-sectors
+rm -rf ~/.lotus-local-net
+rm -rf ~/.lotus-miner-local-net
 
-make clean 2k
+make  2k
 ./lotus fetch-params 2048
 ./lotus-seed pre-seal --sector-size 2KiB --num-sectors 2
 ./lotus-seed genesis new localnet.json
